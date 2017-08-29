@@ -1,9 +1,9 @@
 # WALKMAN 
 
 XBotInterface:
-  urdf_path: "configs/ADVR_shared/bigman/urdf/bigman.urdf"
-  srdf_path: "configs/ADVR_shared/bigman/srdf/bigman.srdf"
-  joint_map_path: "configs/ADVR_shared/bigman/joint_map/bigman_ecat_joint_map.yaml"
+  urdf_path: "configs/WALKMAN_shared/bigman/urdf/bigman.urdf"
+  srdf_path: "configs/WALKMAN_shared/bigman/srdf/bigman.srdf"
+  joint_map_path: "configs/WALKMAN_shared/bigman/joint_map/bigman_ecat_joint_map.yaml"
 
 RobotInterface:
   framework_name: "XBotRT"
@@ -36,7 +36,8 @@ XBotRTPlugins:
   #plugins: ["PlayJointSpaceDemo"] #, "TwoPriorityRtIkPlugin"]
 
 MasterCommunicationInterface:
-  framework_name: "ROS"
+  framework_name: "YARP"
+  enable_ref_read: "false"
   
 CustomCmnd:
   subclass_name: "CustomCmndMessage"
