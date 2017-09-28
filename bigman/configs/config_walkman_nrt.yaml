@@ -6,7 +6,7 @@ XBotInterface:
   joint_map_path: "configs/WALKMAN_shared/bigman/joint_map/bigman_ecat_joint_map.yaml"
 
 RobotInterface:
-  framework_name: "XBotRT"
+  framework_name: "ROS"
 
 ModelInterface:
   model_type: "RBDL"
